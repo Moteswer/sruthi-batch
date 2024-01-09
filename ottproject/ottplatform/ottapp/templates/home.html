@@ -1,0 +1,15 @@
+<!-- home.html -->
+{% extends 'base.html' %}
+
+{% block title %}Home - My Website{% endblock %}
+
+{% block content %}
+    <h1>Welcome to the Home Page</h1>
+    <p>This is the content of the home page.</p>
+
+    <div>
+        <a href="{% url 'register_customer' %}" class="btn btn-primary">Register</a>
+        <a href="{% url 'login' %}" class="btn btn-success">Sign In</a>
+    </div>
+{% endblock %}
+
